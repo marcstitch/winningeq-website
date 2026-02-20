@@ -1,0 +1,8 @@
+# Redirect URLs without .html extension to .html files
+/keynote-contact  /keynote-contact.html  200
+/interview-contact  /interview-contact.html  200
+/speaking  /speaking.html  200
+/interviews  /interviews.html  200
+/about  /about.html  200
+/contact  /contact.html  200
+/media  /media.html  200
