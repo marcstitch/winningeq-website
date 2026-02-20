@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Contact Information"
+        name: "contact"
+        file: "content/contact.json"
+        fields:
+          - {label: "Email Address", name: "email", widget: "string", hint: "Your booking email"}
+          - {label: "LinkedIn URL", name: "linkedin", widget: "string"}
+          - {label: "Twitter URL", name: "twitter", widget: "string"}
+          - {label: "Instagram URL", name: "instagram", widget: "string"}
+          
+      - label: "Photos & Logo"
+        name: "photos"
+        file: "content/photos.json"
+        fields:
+          - {label: "Site Logo (optional)", name: "logo", widget: "image", required: false, hint: "Upload your WinningEQ logo"}
+          - {label: "Your Professional Headshot", name: "headshot", widget: "image", required: false}
+          - {label: "Speaking Photo", name: "speaking_photo", widget: "image", required: false}
+          - {label: "Interview Photo", name: "interview_photo", widget: "image", required: false}
+          - {label: "Casual Portrait", name: "casual_photo", widget: "image", required: false}
+          
+      - label: "Demo Reel Video"
+        name: "video"
+        file: "content/video.json"
+        fields:
+          - {label: "Video Platform", name: "platform", widget: "select", options: ["Vimeo", "YouTube"], default: "Vimeo"}
+          - {label: "Video ID", name: "video_id", widget: "string", required: false, hint: "Just the video ID from the URL (e.g., for https://vimeo.com/123456789 enter: 123456789)"}

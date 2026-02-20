@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>Forms</title></head>
+<body>
+<!-- Hidden forms for Netlify detection -->
+
+<form name="speaking-booking" action="/thank-you.html" netlify netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="speaking-booking" />
+  <input type="text" name="name" />
+  <input type="text" name="organization" />
+  <input type="email" name="email" />
+  <input type="tel" name="phone" />
+  <input type="text" name="event-date" />
+  <select name="event-type"><option>Conference</option></select>
+  <select name="audience-size"><option>50-100</option></select>
+  <select name="keynote-topic"><option>The Enjoyment EQuation</option></select>
+  <textarea name="message"></textarea>
+</form>
+
+<form name="interview-booking" action="/thank-you.html" netlify netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="interview-booking" />
+  <input type="text" name="name" />
+  <input type="text" name="organization" />
+  <input type="email" name="email" />
+  <input type="tel" name="phone" />
+  <input type="text" name="event-date" />
+  <select name="interview-format"><option>Fireside Chat</option></select>
+  <textarea name="message"></textarea>
+</form>
+
+<form name="general-contact" action="/thank-you.html" netlify netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="general-contact" />
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="text" name="subject" />
+  <textarea name="message"></textarea>
+</form>
+
+</body>
+</html>
